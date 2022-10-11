@@ -1,0 +1,14 @@
+{
+  "name": "lys-mss",
+  "version": "0.0.1",
+  "description": "mss plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plugin"
+  ],
+  "author": "sgemini",
+  "license": "ISC"
+}
