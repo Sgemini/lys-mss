@@ -1,6 +1,6 @@
 {
   "name": "lys-mss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mss plugin",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,8 @@
     "plugin"
   ],
   "author": "sgemini",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
 }
