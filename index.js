@@ -1,3 +1,5 @@
+import Num from './classes/Number';
+
 function mix(...mixins) {
   class Mix {
     constructor() {
@@ -13,7 +15,7 @@ function mix(...mixins) {
   }
 
   return Mix;
-}
+};
 
 function copyProperties(target, source) {
   for (let key of Reflect.ownKeys(source)) {
@@ -24,20 +26,20 @@ function copyProperties(target, source) {
       let desc = Object.getOwnPropertyDescriptor(source, key);
       Object.defineProperty(target, key, desc);
     }
-  }
-}
+  };
+};
 
 class Mss extends mix(Num, String) {
   constructor (params) {
-    super()
+    super();
     this.params = params;
     console.log(this, 'mss class')
   }
-}
+};
 
 function mss(params) {
   console.log('hello mss2');
   return new Mss(params);
-}
+};
 
 export default mss;
